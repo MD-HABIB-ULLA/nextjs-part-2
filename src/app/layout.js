@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navber from "@/components/Navber/Navber";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +12,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="bg-center bg-cover bg-fixed min-h-screen" style={{backgroundImage : "url(https://i.ibb.co/yPp2rGW/pexels-iriser-1366957.jpg"}}>
+          <Navber />
+          <div className="pt-16 h-full">{children}</div>
+        </div>
+      </body>
     </html>
   );
 }
