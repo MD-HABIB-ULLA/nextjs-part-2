@@ -9,6 +9,7 @@ const Navber = () => {
   const routes = [
     { path: "/", title: "Home" },
     { path: "/posts", title: "Posts" },
+    { path: "/meals", title: "Meals" },
   ];
   const list = (
     <>
