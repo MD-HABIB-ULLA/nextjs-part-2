@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const SearchInput = () => {
   const [searchResult, setSearchResult] = useState([]);
-  const [searchText, setSearchText] = useState("");
+  const [searchText, setSearchText] = useState("a");
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
