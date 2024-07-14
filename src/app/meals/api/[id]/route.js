@@ -11,6 +11,16 @@ export async function PATCH(req, { params }) {
 
     })
 }
+export async function DELETE(req, { params }) {
+   
+    const otherData = data.filter((a) => a.id !== parseInt(params.id))
+    
+    return Response.json({
+        massage: "successfully deleted ",
+        otherData
+    })
+}
+
 
 
 const data = [
